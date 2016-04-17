@@ -1,0 +1,18 @@
+body {
+	margin:40px 0 0 0;
+	padding:0;
+	font-size:15px;
+	font-family:宋体;
+	background:#fff;
+}
+
+/*日历UI的今天单元格样式*/
+.ui-datepicker-today .ui-state-highlight {
+	border:1px solid #eee;
+	color:#f60;
+}
+/*日历UI的选定单元格样式*/
+.ui-datepicker-current-day .ui-state-active {
+	border:1px solid #eee;
+	color:#06f;
+}

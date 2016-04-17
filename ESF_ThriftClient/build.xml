@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<project name="ESF_ThriftClient" default="war" basedir=".">
+
+	<property name="charset" value="UTF-8" />
+	<property name="src" value="${basedir}/src" />
+	<property name="classes" value="${basedir}/classes" />
+	<property name="build" value="E:/build" />
+	<property name="lib" value="${basedir}/WebRoot/WEB-INF/lib" />
+	<property name="TomcatLib" value="${basedir}/TomcatLib" />
+
+	<path id="libpath">
+		<fileset dir="${lib}">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${TomcatLib}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+
+	<target name="clean">
+		<delete dir="${classes}" />
+		<delete dir="${build}" />
+		<mkdir dir="${build}" />
+	</target>
+
+	<target name="compile" depends="clean">
+		<mkdir dir="${classes}" />
+		<javac encoding="${charset}" classpathref="libpath" srcdir="${src}" destdir="${classes}" />
+		<echo message="copy files" />
+		<copy todir="${classes}">
+			<fileset dir="${src}">
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="war" depends="compile">
+		<war destfile="${build}/${ant.project.name}.war" webxml="${basedir}/WebRoot/WEB-INF/web.xml">
+			<fileset dir="${basedir}/WebRoot">
+				<exclude name="**/*.jar" />
+				<exclude name="**/*.properties" />
+				<exclude name="**/*.class" />
+				<exclude name="**/*.xml" />
+			</fileset>
+			<lib dir="${lib}" />
+			<classes dir="${classes}" />
+		</war>
+		<delete dir="${classes}" />
+	</target>
+</project>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.kernel.testcase.RegisterActionTest">
+        <methods>
+          <include name="testRegister"/>
+          <include name="testRegisterUserLogin"/>
+          <include name="afterClassTest"/>
+          <include name="beforeClassTest"/>
+          <include name="testRegisterWithExitsUser"/>
+        </methods>
+      </class> <!-- com.kernel.testcase.RegisterActionTest -->
+      <class name="com.kernel.testcase.LoginActionTest">
+        <methods>
+          <include name="testLoginWithPwdError"/>
+          <include name="afterClassTest"/>
+          <include name="testLogin"/>
+          <include name="beforeClassTest"/>
+        </methods>
+      </class> <!-- com.kernel.testcase.LoginActionTest -->
+      <class name="com.kernel.testcase.InitTest">
+        <methods>
+          <include name="afterTestSuite"/>
+          <include name="beforeTestSuite"/>
+        </methods>
+      </class> <!-- com.kernel.testcase.InitTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

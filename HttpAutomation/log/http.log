@@ -1,0 +1,516 @@
+2014/04/22 20:04:33  INFO com.kernel.basecase.BaseCase:23 - ======2014-04-22 20:04:33:828：测试集开始======
+2014/04/22 20:04:34 DEBUG com.kernel.util.ExcelUtil:55 - Current excel header is :[method, uid, email, password]
+2014/04/22 20:04:34  INFO com.kernel.util.ExcelUtil:59 - found the first column content in excel is:inituser1
+2014/04/22 20:04:34 DEBUG com.kernel.util.ExcelUtil:63 - Found the correct cell data,the content we found in excel is:inituser1
+2014/04/22 20:04:34 DEBUG com.kernel.util.ExcelUtil:82 - current Row data is :{uid=base003, email=base003@test.com, method=inituser1, password=111111}
+2014/04/22 20:04:34  INFO com.kernel.util.ExcelUtil:29 - Imported data,the imported Map data is:{uid=base003, email=base003@test.com, method=inituser1, password=111111}
+2014/04/22 20:04:34 DEBUG com.kernel.action.RegisterAction:32 - url is :http://172.16.199.59:6061/mktvportal/mktv/register?timestamp=1398168274343&signature=f75fcd213a3cd3f784d3ecdb546e4590
+2014/04/22 20:04:34 DEBUG com.kernel.action.RegisterAction:34 - template is :
+2014/04/22 20:04:34 DEBUG com.kernel.action.RegisterAction:35 - {
+    "request":{
+	"user":{
+		"email":"%1$s",
+		"password":"%2$s",
+		"authuser":{
+			"uid":"%3$s",
+			"sns":"twitter",
+			"accesstoken":"kasjdfljasdfwekrjasdfskdhfkl",
+			"authtime":"%4$s"
+		}
+	}
+    }       
+}
+2014/04/22 20:04:34 DEBUG com.kernel.httputil.DWHttpClient:67 - ----------------------------------------------
+2014/04/22 20:04:34 DEBUG com.kernel.httputil.DWHttpClient:68 - Http Request Url : http://172.16.199.59:6061/mktvportal/mktv/register?timestamp=1398168274343&signature=f75fcd213a3cd3f784d3ecdb546e4590
+2014/04/22 20:04:34 DEBUG com.kernel.httputil.DWHttpClient:69 - Http Request Method : POST
+2014/04/22 20:04:34 DEBUG com.kernel.httputil.DWHttpClient:70 - Http Request Headers : 
+2014/04/22 20:04:34 DEBUG com.kernel.httputil.DWHttpClient:73 - Accept:application/json
+2014/04/22 20:04:34 DEBUG com.kernel.httputil.DWHttpClient:73 - ContentType:application/json; charset=UTF-8
+2014/04/22 20:04:34 DEBUG com.kernel.httputil.DWHttpClient:75 - Http Request body : 
+2014/04/22 20:04:34 DEBUG com.kernel.httputil.DWHttpClient:76 - {
+    "request":{
+	"user":{
+		"email":"base003@test.com",
+		"password":"MTExMTEx",
+		"authuser":{
+			"uid":"base003",
+			"sns":"twitter",
+			"accesstoken":"kasjdfljasdfwekrjasdfskdhfkl",
+			"authtime":"2014-04-22 20:04:34"
+		}
+	}
+    }       
+}
+2014/04/22 20:04:34 DEBUG com.kernel.httputil.DWHttpClient:77 - ----------------------------------------------
+2014/04/22 20:04:34 DEBUG com.kernel.httputil.DWHttpResponse:74 - ----------------------------------------------
+2014/04/22 20:04:34 DEBUG com.kernel.httputil.DWHttpResponse:75 - Http Response statusCode: 200
+2014/04/22 20:04:34 DEBUG com.kernel.httputil.DWHttpResponse:76 - Http Response statusLine: HTTP/1.1 200 OK
+2014/04/22 20:04:34 DEBUG com.kernel.httputil.DWHttpResponse:77 - Http Response Headers:
+2014/04/22 20:04:34 DEBUG com.kernel.httputil.DWHttpResponse:79 - Date: Tue, 22 Apr 2014 12:05:46 GMT
+2014/04/22 20:04:34 DEBUG com.kernel.httputil.DWHttpResponse:79 - Content-Length: 31
+2014/04/22 20:04:34 DEBUG com.kernel.httputil.DWHttpResponse:79 - Connection: close
+2014/04/22 20:04:34 DEBUG com.kernel.httputil.DWHttpResponse:79 - Content-Type: application/json
+2014/04/22 20:04:34 DEBUG com.kernel.httputil.DWHttpResponse:79 - Server: Fonsview Server v1.0
+2014/04/22 20:04:34 DEBUG com.kernel.httputil.DWHttpResponse:81 - Http Response Body:
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpResponse:82 - {
+"result":{
+"errorcode":"2004"
+}
+}
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpResponse:83 - ----------------------------------------------
+2014/04/22 20:04:35 ERROR com.kernel.testcase.InitTest:45 - init user data failed,email:base003@test.com,uid:base003,password:MTExMTEx,authtime:2014-04-22 20:04:34
+2014/04/22 20:04:35 DEBUG com.kernel.util.ExcelUtil:55 - Current excel header is :[method, uid, email, password]
+2014/04/22 20:04:35  INFO com.kernel.util.ExcelUtil:59 - found the first column content in excel is:inituser1
+2014/04/22 20:04:35  INFO com.kernel.util.ExcelUtil:59 - found the first column content in excel is:inituser2
+2014/04/22 20:04:35 DEBUG com.kernel.util.ExcelUtil:63 - Found the correct cell data,the content we found in excel is:inituser2
+2014/04/22 20:04:35 DEBUG com.kernel.util.ExcelUtil:82 - current Row data is :{uid=base004, email=base004@test.com, method=inituser2, password=111111}
+2014/04/22 20:04:35  INFO com.kernel.util.ExcelUtil:29 - Imported data,the imported Map data is:{uid=base004, email=base004@test.com, method=inituser2, password=111111}
+2014/04/22 20:04:35 DEBUG com.kernel.action.RegisterAction:32 - url is :http://172.16.199.59:6061/mktvportal/mktv/register?timestamp=1398168275203&signature=26426994de9ef63d0e6b76ca59cef8dc
+2014/04/22 20:04:35 DEBUG com.kernel.action.RegisterAction:34 - template is :
+2014/04/22 20:04:35 DEBUG com.kernel.action.RegisterAction:35 - {
+    "request":{
+	"user":{
+		"email":"%1$s",
+		"password":"%2$s",
+		"authuser":{
+			"uid":"%3$s",
+			"sns":"twitter",
+			"accesstoken":"kasjdfljasdfwekrjasdfskdhfkl",
+			"authtime":"%4$s"
+		}
+	}
+    }       
+}
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpClient:67 - ----------------------------------------------
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpClient:68 - Http Request Url : http://172.16.199.59:6061/mktvportal/mktv/register?timestamp=1398168275203&signature=26426994de9ef63d0e6b76ca59cef8dc
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpClient:69 - Http Request Method : POST
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpClient:70 - Http Request Headers : 
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpClient:73 - Accept:application/json
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpClient:73 - ContentType:application/json; charset=UTF-8
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpClient:75 - Http Request body : 
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpClient:76 - {
+    "request":{
+	"user":{
+		"email":"base004@test.com",
+		"password":"MTExMTEx",
+		"authuser":{
+			"uid":"base004",
+			"sns":"twitter",
+			"accesstoken":"kasjdfljasdfwekrjasdfskdhfkl",
+			"authtime":"2014-04-22 20:04:35"
+		}
+	}
+    }       
+}
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpClient:77 - ----------------------------------------------
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpResponse:74 - ----------------------------------------------
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpResponse:75 - Http Response statusCode: 200
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpResponse:76 - Http Response statusLine: HTTP/1.1 200 OK
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpResponse:77 - Http Response Headers:
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpResponse:79 - Date: Tue, 22 Apr 2014 12:05:46 GMT
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpResponse:79 - Content-Length: 31
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpResponse:79 - Connection: close
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpResponse:79 - Content-Type: application/json
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpResponse:79 - Server: Fonsview Server v1.0
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpResponse:81 - Http Response Body:
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpResponse:82 - {
+"result":{
+"errorcode":"2004"
+}
+}
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpResponse:83 - ----------------------------------------------
+2014/04/22 20:04:35 ERROR com.kernel.testcase.InitTest:71 - init user data failed,email:base004@test.com,uid:base004,password:MTExMTEx,authtime:2014-04-22 20:04:35
+2014/04/22 20:04:35  INFO com.kernel.basecase.BaseCase:37 - ======2014-04-22 20:04:35:531：测试【com.kernel.testcase.LoginActionTest】开始======
+2014/04/22 20:04:35 DEBUG com.kernel.action.LoginAction:31 - url is :http://172.16.199.59:6061/mktvportal/mktv/login?timestamp=1398168275609&signature=15b8bcf119fcbd64036c00a8c6466881
+2014/04/22 20:04:35 DEBUG com.kernel.action.LoginAction:33 - template is :
+2014/04/22 20:04:35 DEBUG com.kernel.action.LoginAction:34 - {
+    "request":{
+	"user":{
+        "email":"%1$s",
+        "password":"%2$s"
+	}
+    }       
+}
+2014/04/22 20:04:35  INFO com.kernel.basecase.BaseCase:51 - ======2014-04-22 20:04:35:609：案例【com.kernel.testcase.LoginActionTest.testLogin】开始======
+2014/04/22 20:04:35 DEBUG com.kernel.util.ExcelUtil:55 - Current excel header is :[method, email, password]
+2014/04/22 20:04:35  INFO com.kernel.util.ExcelUtil:59 - found the first column content in excel is:testlogin
+2014/04/22 20:04:35 DEBUG com.kernel.util.ExcelUtil:63 - Found the correct cell data,the content we found in excel is:testlogin
+2014/04/22 20:04:35 DEBUG com.kernel.util.ExcelUtil:82 - current Row data is :{email=base003@test.com, method=testLogin, password=111111}
+2014/04/22 20:04:35  INFO com.kernel.util.ExcelUtil:29 - Imported data,the imported Map data is:{email=base003@test.com, method=testLogin, password=111111}
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpClient:67 - ----------------------------------------------
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpClient:68 - Http Request Url : http://172.16.199.59:6061/mktvportal/mktv/login?timestamp=1398168275609&signature=15b8bcf119fcbd64036c00a8c6466881
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpClient:69 - Http Request Method : POST
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpClient:70 - Http Request Headers : 
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpClient:73 - Accept:application/json
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpClient:73 - ContentType:application/json; charset=UTF-8
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpClient:75 - Http Request body : 
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpClient:76 - {
+    "request":{
+	"user":{
+        "email":"base003@test.com",
+        "password":"MTExMTEx"
+	}
+    }       
+}
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpClient:77 - ----------------------------------------------
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpResponse:74 - ----------------------------------------------
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpResponse:75 - Http Response statusCode: 200
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpResponse:76 - Http Response statusLine: HTTP/1.1 200 OK
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpResponse:77 - Http Response Headers:
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpResponse:79 - Vary: Accept-Encoding
+2014/04/22 20:04:35 DEBUG com.kernel.httputil.DWHttpResponse:79 - Date: Tue, 22 Apr 2014 12:05:47 GMT
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:79 - Content-Length: 783
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:79 - Connection: close
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:79 - Content-Type: application/json
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:79 - Server: Fonsview Server v1.0
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:81 - Http Response Body:
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:82 - {
+"result":{
+"userevent":{
+"notice":0,
+"message":0,
+"chorusinvite":0,
+"followsing":0,
+"compversion":0,
+"fannum":0,
+"feednum":0
+},
+"user":{
+"email":"base003@test.com",
+"token":"e76362fe9a5b0ec4221813a54b78267c",
+"gender":-1,
+"status":1,
+"lastactive":"2014-04-22 20:05:47",
+"authusers":[
+{
+"uid":"base003",
+"sns":"twitter",
+"original":true,
+"accesstoken":"kasjdfljasdfwekrjasdfskdhfkl",
+"authtime":"2014-03-06 15:22:37",
+"userid":67
+}
+],
+"userlevel":{
+"richlevel":0,
+"richlevelname":"",
+"nextrichlevel":0,
+"starlevel":0,
+"starlevelname":"",
+"nextstarlevel":0,
+"cost":0,
+"pop":0,
+"userid":67,
+"partcost":0
+},
+"userid":67,
+"nickname":"base003",
+"createtime":"2014-03-06 15:23:02",
+"userstatistic":{
+"friendnum":0,
+"fannum":0,
+"giftnum":0,
+"singnum":0,
+"chorusnum":0,
+"repostnum":0,
+"focusnum":0,
+"userstatisticid":67
+}
+},
+"errorcode":"ok"
+}
+}
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:83 - ----------------------------------------------
+2014/04/22 20:04:36  INFO com.kernel.basecase.BaseCase:59 - 案例 【com.kernel.testcase.LoginActionTest.testLogin】 运行通过！
+2014/04/22 20:04:36  INFO com.kernel.basecase.BaseCase:63 - ======2014-04-22 20:04:36:109：案例【com.kernel.testcase.LoginActionTest.testLogin】结束======
+2014/04/22 20:04:36  INFO com.kernel.basecase.BaseCase:65 - ======本次案例运行消耗时间 0 秒！======
+2014/04/22 20:04:36  INFO com.kernel.basecase.BaseCase:51 - ======2014-04-22 20:04:36:125：案例【com.kernel.testcase.LoginActionTest.testLoginWithPwdError】开始======
+2014/04/22 20:04:36 DEBUG com.kernel.util.ExcelUtil:55 - Current excel header is :[method, email, password]
+2014/04/22 20:04:36  INFO com.kernel.util.ExcelUtil:59 - found the first column content in excel is:testlogin
+2014/04/22 20:04:36  INFO com.kernel.util.ExcelUtil:59 - found the first column content in excel is:testloginwithpwderror
+2014/04/22 20:04:36 DEBUG com.kernel.util.ExcelUtil:63 - Found the correct cell data,the content we found in excel is:testloginwithpwderror
+2014/04/22 20:04:36 DEBUG com.kernel.util.ExcelUtil:82 - current Row data is :{email=base004@test.com, method=testLoginWithPwdError, password=222222}
+2014/04/22 20:04:36  INFO com.kernel.util.ExcelUtil:29 - Imported data,the imported Map data is:{email=base004@test.com, method=testLoginWithPwdError, password=222222}
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpClient:67 - ----------------------------------------------
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpClient:68 - Http Request Url : http://172.16.199.59:6061/mktvportal/mktv/login?timestamp=1398168275609&signature=15b8bcf119fcbd64036c00a8c6466881
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpClient:69 - Http Request Method : POST
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpClient:70 - Http Request Headers : 
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpClient:73 - Accept:application/json
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpClient:73 - ContentType:application/json; charset=UTF-8
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpClient:75 - Http Request body : 
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpClient:76 - {
+    "request":{
+	"user":{
+        "email":"base004@test.com",
+        "password":"MjIyMjIy"
+	}
+    }       
+}
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpClient:77 - ----------------------------------------------
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:74 - ----------------------------------------------
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:75 - Http Response statusCode: 200
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:76 - Http Response statusLine: HTTP/1.1 200 OK
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:77 - Http Response Headers:
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:79 - Date: Tue, 22 Apr 2014 12:05:47 GMT
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:79 - Content-Length: 31
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:79 - Connection: close
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:79 - Content-Type: application/json
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:79 - Server: Fonsview Server v1.0
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:81 - Http Response Body:
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:82 - {
+"result":{
+"errorcode":"2201"
+}
+}
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:83 - ----------------------------------------------
+2014/04/22 20:04:36  INFO com.kernel.basecase.BaseCase:59 - 案例 【com.kernel.testcase.LoginActionTest.testLoginWithPwdError】 运行通过！
+2014/04/22 20:04:36  INFO com.kernel.basecase.BaseCase:63 - ======2014-04-22 20:04:36:421：案例【com.kernel.testcase.LoginActionTest.testLoginWithPwdError】结束======
+2014/04/22 20:04:36  INFO com.kernel.basecase.BaseCase:65 - ======本次案例运行消耗时间 0 秒！======
+2014/04/22 20:04:36  INFO com.kernel.basecase.BaseCase:43 - ======2014-04-22 20:04:36:437：测试【com.kernel.testcase.LoginActionTest】结束======
+2014/04/22 20:04:36  INFO com.kernel.basecase.BaseCase:44 - ======本次测试运行消耗时间 0 秒！======
+2014/04/22 20:04:36  INFO com.kernel.basecase.BaseCase:37 - ======2014-04-22 20:04:36:437：测试【com.kernel.testcase.RegisterActionTest】开始======
+2014/04/22 20:04:36 DEBUG com.kernel.action.RegisterAction:32 - url is :http://172.16.199.59:6061/mktvportal/mktv/register?timestamp=1398168276437&signature=3ed68bf28114ff599ae8999990bd56db
+2014/04/22 20:04:36 DEBUG com.kernel.action.RegisterAction:34 - template is :
+2014/04/22 20:04:36 DEBUG com.kernel.action.RegisterAction:35 - {
+    "request":{
+	"user":{
+		"email":"%1$s",
+		"password":"%2$s",
+		"authuser":{
+			"uid":"%3$s",
+			"sns":"twitter",
+			"accesstoken":"kasjdfljasdfwekrjasdfskdhfkl",
+			"authtime":"%4$s"
+		}
+	}
+    }       
+}
+2014/04/22 20:04:36 DEBUG com.kernel.action.LoginAction:31 - url is :http://172.16.199.59:6061/mktvportal/mktv/login?timestamp=1398168276531&signature=420ed9cea26bbd1beda422e990ddbf75
+2014/04/22 20:04:36 DEBUG com.kernel.action.LoginAction:33 - template is :
+2014/04/22 20:04:36 DEBUG com.kernel.action.LoginAction:34 - {
+    "request":{
+	"user":{
+        "email":"%1$s",
+        "password":"%2$s"
+	}
+    }       
+}
+2014/04/22 20:04:36  INFO com.kernel.basecase.BaseCase:51 - ======2014-04-22 20:04:36:531：案例【com.kernel.testcase.RegisterActionTest.testRegister】开始======
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpClient:67 - ----------------------------------------------
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpClient:68 - Http Request Url : http://172.16.199.59:6061/mktvportal/mktv/register?timestamp=1398168276437&signature=3ed68bf28114ff599ae8999990bd56db
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpClient:69 - Http Request Method : POST
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpClient:70 - Http Request Headers : 
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpClient:73 - Accept:application/json
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpClient:73 - ContentType:application/json; charset=UTF-8
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpClient:75 - Http Request body : 
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpClient:76 - {
+    "request":{
+	"user":{
+		"email":"20140422200436531@test.com",
+		"password":"MTExMTEx",
+		"authuser":{
+			"uid":"20140422200436531",
+			"sns":"twitter",
+			"accesstoken":"kasjdfljasdfwekrjasdfskdhfkl",
+			"authtime":"2014-04-22 20:04:36"
+		}
+	}
+    }       
+}
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpClient:77 - ----------------------------------------------
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:74 - ----------------------------------------------
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:75 - Http Response statusCode: 200
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:76 - Http Response statusLine: HTTP/1.1 200 OK
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:77 - Http Response Headers:
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:79 - Vary: Accept-Encoding
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:79 - Date: Tue, 22 Apr 2014 12:05:47 GMT
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:79 - Content-Length: 705
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:79 - Connection: close
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:79 - Content-Type: application/json
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:79 - Server: Fonsview Server v1.0
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:81 - Http Response Body:
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:82 - {
+"result":{
+"user":{
+"email":"20140422200436531@test.com",
+"token":"9583d8b0bddadbae80874f864df0a0e6",
+"gender":-1,
+"status":1,
+"lastactive":"2014-04-22 20:05:47",
+"authusers":[
+{
+"uid":"20140422200436531",
+"sns":"twitter",
+"original":true,
+"accesstoken":"kasjdfljasdfwekrjasdfskdhfkl",
+"authtime":"2014-04-22 20:04:36",
+"userid":89
+}
+],
+"userlevel":{
+"richlevel":0,
+"richlevelname":"",
+"nextrichlevel":0,
+"starlevel":0,
+"starlevelname":"",
+"nextstarlevel":0,
+"cost":0,
+"pop":0,
+"userid":89,
+"partcost":0
+},
+"userid":89,
+"nickname":"20140422200436531",
+"createtime":"2014-04-22 20:05:47",
+"userstatistic":{
+"friendnum":0,
+"fannum":0,
+"giftnum":0,
+"singnum":0,
+"chorusnum":0,
+"repostnum":0,
+"focusnum":0,
+"userstatisticid":89
+}
+},
+"errorcode":"ok"
+}
+}
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:83 - ----------------------------------------------
+2014/04/22 20:04:36  INFO com.kernel.basecase.BaseCase:59 - 案例 【com.kernel.testcase.RegisterActionTest.testRegister】 运行通过！
+2014/04/22 20:04:36  INFO com.kernel.basecase.BaseCase:63 - ======2014-04-22 20:04:36:843：案例【com.kernel.testcase.RegisterActionTest.testRegister】结束======
+2014/04/22 20:04:36  INFO com.kernel.basecase.BaseCase:65 - ======本次案例运行消耗时间 0 秒！======
+2014/04/22 20:04:36  INFO com.kernel.basecase.BaseCase:51 - ======2014-04-22 20:04:36:843：案例【com.kernel.testcase.RegisterActionTest.testRegisterUserLogin】开始======
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpClient:67 - ----------------------------------------------
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpClient:68 - Http Request Url : http://172.16.199.59:6061/mktvportal/mktv/login?timestamp=1398168276531&signature=420ed9cea26bbd1beda422e990ddbf75
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpClient:69 - Http Request Method : POST
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpClient:70 - Http Request Headers : 
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpClient:73 - Accept:application/json
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpClient:73 - ContentType:application/json; charset=UTF-8
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpClient:75 - Http Request body : 
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpClient:76 - {
+    "request":{
+	"user":{
+        "email":"20140422200436531@test.com",
+        "password":"MTExMTEx"
+	}
+    }       
+}
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpClient:77 - ----------------------------------------------
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:74 - ----------------------------------------------
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:75 - Http Response statusCode: 200
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:76 - Http Response statusLine: HTTP/1.1 200 OK
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:77 - Http Response Headers:
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:79 - Vary: Accept-Encoding
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:79 - Date: Tue, 22 Apr 2014 12:05:47 GMT
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:79 - Content-Length: 813
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:79 - Connection: close
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:79 - Content-Type: application/json
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:79 - Server: Fonsview Server v1.0
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:81 - Http Response Body:
+2014/04/22 20:04:36 DEBUG com.kernel.httputil.DWHttpResponse:82 - {
+"result":{
+"userevent":{
+"notice":0,
+"message":0,
+"chorusinvite":0,
+"followsing":0,
+"compversion":0,
+"fannum":0,
+"feednum":0
+},
+"user":{
+"email":"20140422200436531@test.com",
+"token":"af0cad55e2af3480f3951349307bc90d",
+"gender":-1,
+"status":1,
+"lastactive":"2014-04-22 20:05:48",
+"authusers":[
+{
+"uid":"20140422200436531",
+"sns":"twitter",
+"original":true,
+"accesstoken":"kasjdfljasdfwekrjasdfskdhfkl",
+"authtime":"2014-04-22 20:04:36",
+"userid":89
+}
+],
+"userlevel":{
+"richlevel":0,
+"richlevelname":"",
+"nextrichlevel":0,
+"starlevel":0,
+"starlevelname":"",
+"nextstarlevel":0,
+"cost":0,
+"pop":0,
+"userid":89,
+"partcost":0
+},
+"userid":89,
+"nickname":"20140422200436531",
+"createtime":"2014-04-22 20:05:47",
+"userstatistic":{
+"friendnum":0,
+"fannum":0,
+"giftnum":0,
+"singnum":0,
+"chorusnum":0,
+"repostnum":0,
+"focusnum":0,
+"userstatisticid":89
+}
+},
+"errorcode":"ok"
+}
+}
+2014/04/22 20:04:37 DEBUG com.kernel.httputil.DWHttpResponse:83 - ----------------------------------------------
+2014/04/22 20:04:37  INFO com.kernel.basecase.BaseCase:59 - 案例 【com.kernel.testcase.RegisterActionTest.testRegisterUserLogin】 运行通过！
+2014/04/22 20:04:37  INFO com.kernel.basecase.BaseCase:63 - ======2014-04-22 20:04:37:062：案例【com.kernel.testcase.RegisterActionTest.testRegisterUserLogin】结束======
+2014/04/22 20:04:37  INFO com.kernel.basecase.BaseCase:65 - ======本次案例运行消耗时间 0 秒！======
+2014/04/22 20:04:37  INFO com.kernel.basecase.BaseCase:51 - ======2014-04-22 20:04:37:062：案例【com.kernel.testcase.RegisterActionTest.testRegisterWithExitsUser】开始======
+2014/04/22 20:04:37 DEBUG com.kernel.httputil.DWHttpClient:67 - ----------------------------------------------
+2014/04/22 20:04:37 DEBUG com.kernel.httputil.DWHttpClient:68 - Http Request Url : http://172.16.199.59:6061/mktvportal/mktv/register?timestamp=1398168276437&signature=3ed68bf28114ff599ae8999990bd56db
+2014/04/22 20:04:37 DEBUG com.kernel.httputil.DWHttpClient:69 - Http Request Method : POST
+2014/04/22 20:04:37 DEBUG com.kernel.httputil.DWHttpClient:70 - Http Request Headers : 
+2014/04/22 20:04:37 DEBUG com.kernel.httputil.DWHttpClient:73 - Accept:application/json
+2014/04/22 20:04:37 DEBUG com.kernel.httputil.DWHttpClient:73 - ContentType:application/json; charset=UTF-8
+2014/04/22 20:04:37 DEBUG com.kernel.httputil.DWHttpClient:75 - Http Request body : 
+2014/04/22 20:04:37 DEBUG com.kernel.httputil.DWHttpClient:76 - {
+    "request":{
+	"user":{
+		"email":"20140422200436531@test.com",
+		"password":"MTExMTEx",
+		"authuser":{
+			"uid":"20140422200436531",
+			"sns":"twitter",
+			"accesstoken":"kasjdfljasdfwekrjasdfskdhfkl",
+			"authtime":"2014-04-22 20:04:37"
+		}
+	}
+    }       
+}
+2014/04/22 20:04:37 DEBUG com.kernel.httputil.DWHttpClient:77 - ----------------------------------------------
+2014/04/22 20:04:37 DEBUG com.kernel.httputil.DWHttpResponse:74 - ----------------------------------------------
+2014/04/22 20:04:37 DEBUG com.kernel.httputil.DWHttpResponse:75 - Http Response statusCode: 200
+2014/04/22 20:04:37 DEBUG com.kernel.httputil.DWHttpResponse:76 - Http Response statusLine: HTTP/1.1 200 OK
+2014/04/22 20:04:37 DEBUG com.kernel.httputil.DWHttpResponse:77 - Http Response Headers:
+2014/04/22 20:04:37 DEBUG com.kernel.httputil.DWHttpResponse:79 - Date: Tue, 22 Apr 2014 12:05:48 GMT
+2014/04/22 20:04:37 DEBUG com.kernel.httputil.DWHttpResponse:79 - Content-Length: 31
+2014/04/22 20:04:37 DEBUG com.kernel.httputil.DWHttpResponse:79 - Connection: close
+2014/04/22 20:04:37 DEBUG com.kernel.httputil.DWHttpResponse:79 - Content-Type: application/json
+2014/04/22 20:04:37 DEBUG com.kernel.httputil.DWHttpResponse:79 - Server: Fonsview Server v1.0
+2014/04/22 20:04:37 DEBUG com.kernel.httputil.DWHttpResponse:81 - Http Response Body:
+2014/04/22 20:04:37 DEBUG com.kernel.httputil.DWHttpResponse:82 - {
+"result":{
+"errorcode":"2004"
+}
+}
+2014/04/22 20:04:37 DEBUG com.kernel.httputil.DWHttpResponse:83 - ----------------------------------------------
+2014/04/22 20:04:37  INFO com.kernel.basecase.BaseCase:59 - 案例 【com.kernel.testcase.RegisterActionTest.testRegisterWithExitsUser】 运行通过！
+2014/04/22 20:04:37  INFO com.kernel.basecase.BaseCase:63 - ======2014-04-22 20:04:37:265：案例【com.kernel.testcase.RegisterActionTest.testRegisterWithExitsUser】结束======
+2014/04/22 20:04:37  INFO com.kernel.basecase.BaseCase:65 - ======本次案例运行消耗时间 0 秒！======
+2014/04/22 20:04:37  INFO com.kernel.basecase.BaseCase:43 - ======2014-04-22 20:04:37:265：测试【com.kernel.testcase.RegisterActionTest】结束======
+2014/04/22 20:04:37  INFO com.kernel.basecase.BaseCase:44 - ======本次测试运行消耗时间 0 秒！======
+2014/04/22 20:04:37  INFO com.kernel.basecase.BaseCase:29 - ======2014-04-22 20:04:37:265：测试集结束======
+2014/04/22 20:04:37  INFO com.kernel.basecase.BaseCase:30 - ======本次测试集运行消耗时间 3 秒！======

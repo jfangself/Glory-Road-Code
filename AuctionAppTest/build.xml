@@ -1,0 +1,328 @@
+﻿<project name="AuctionAppTest" basedir="." default="run">
+
+	<property file="build.properties"/>
+
+	<property name="ANDROID_HOME" value="${ANDROID_HOME}" />
+
+	<property name="android.platform.tools" value="${ANDROID_HOME}/platform-tools" />
+
+	<condition else="${android.platform.tools}/adb" property="adb" value="${android.platform.tools}/adb.exe">
+
+		<os family="windows" />
+	</condition>
+
+	<target name="dirs">
+
+		<echo message="delete and mkdir" />
+
+		<delete dir="${log_path}" />
+
+		<delete dir="${result_path}" />
+
+		<delete dir="${capture_path}" />
+
+		<mkdir dir="${log_path}" />
+
+		<mkdir dir="${result_path}" />
+
+		<mkdir dir="${capture_path}" />
+	</target>
+
+	<target name="resign_apk">
+
+		<echo message="Command: java -jar re-sign.jar ${apk} ${apk_path}" />
+
+		<exec executable="java" failonerror="true">
+
+			<arg value="-jar" />
+
+			<arg value="re-sign.jar" />
+
+			<arg value="${apk}" />
+
+			<arg value="${apk_path}" />
+		</exec>
+	</target>
+
+	<target name="resign_apk_test">
+
+		<echo message="Command: java -jar re-sign.jar ${apk_test} ${apk_test_path}" />
+
+		<exec executable="java" failonerror="true">
+
+			<arg value="-jar" />
+
+			<arg value="re-sign.jar" />
+
+			<arg value="${apk_test}" />
+
+			<arg value="${apk_test_path}" />
+		</exec>
+	</target>
+
+	<target name="adb_setInstallLocation">
+
+		<echo message="Command: ${adb} shell pm set-install-location ${InstallLocation}" />
+
+		<exec executable="${adb}" failonerror="true">
+
+			<arg value="shell" />
+
+			<arg value="pm" />
+
+			<arg value="set-install-location" />
+
+			<arg value="${InstallLocation}" />
+		</exec>
+
+		<echo message="Command: ${adb} shell pm get-install-location" />
+
+		<exec executable="${adb}" failonerror="true">
+
+			<arg value="shell" />
+
+			<arg value="pm" />
+
+			<arg value="get-install-location" />
+		</exec>
+	</target>
+
+	<target name="adb_install">
+
+		<echo message="Command: ${adb} -s ${device} install ${apk_path}" />
+
+		<exec executable="${adb}" failonerror="true">
+
+			<arg value="-s" />
+
+			<arg value="${device}" />
+
+			<arg value="install" />
+
+			<arg value="-r" />
+
+			<arg value="${apk_path}" />
+		</exec>
+	</target>
+
+	<target name="adb_uninstall">
+
+		<echo message="Command: ${adb} -s ${device} uninstall ${apk_package}" />
+
+		<exec executable="${adb}" failonerror="true">
+
+			<arg value="-s" />
+
+			<arg value="${device}" />
+
+			<arg value="uninstall" />
+
+			<arg value="${apk_package}" />
+		</exec>
+	</target>
+
+	<target name="adb_install_test">
+
+		<echo message="Command: ${adb} -s ${device} install ${apk_test_path}" />
+
+		<exec executable="${adb}" failonerror="true">
+
+			<arg value="-s" />
+
+			<arg value="${device}" />
+
+			<arg value="install" />
+
+			<arg value="-r" />
+
+			<arg value="${apk_test_path}" />
+		</exec>
+	</target>
+
+	<target name="adb_uninstall_test">
+
+		<echo message="Command: ${adb} -s ${device} uninstall ${apk_test_package}" />
+
+		<exec executable="${adb}" failonerror="true">
+
+			<arg value="-s" />
+
+			<arg value="${device}" />
+
+			<arg value="uninstall" />
+
+			<arg value="${apk_test_package}" />
+		</exec>
+	</target>
+
+	<target name="adb_runtest">
+
+		<echo message="Command: ${adb} -s ${device} shell am instrument -w ${apk_test_package}/${TestRunner}" />
+
+		<exec executable="${adb}" failonerror="true">
+
+			<arg value="-s" />
+
+			<arg value="${device}" />
+
+			<arg value="shell" />
+
+			<arg value="am" />
+
+			<arg value="instrument" />
+
+			<arg value="-w" />
+
+			<arg value="${apk_test_package}/${TestRunner}" />
+		</exec>
+	</target>
+
+	<target name="adb_getlog">
+
+		<echo message="Command: ${adb} -s ${device} pull ${athrun_log_path} ./${log_path}" />
+
+		<exec executable="${adb}" failonerror="true">
+
+			<arg value="-s" />
+
+			<arg value="${device}" />
+
+			<arg value="pull" />
+
+			<arg value="${athrun_log_path}" />
+
+			<arg value="./${log_path}" />
+		</exec>
+
+		<echo message="Command: ${adb} -s ${device} shell rm ${athrun_log_path}/*" />
+
+		<exec executable="${adb}" failonerror="true">
+
+			<arg value="-s" />
+
+			<arg value="${device}" />
+
+			<arg value="shell" />
+
+			<arg value="rm" />
+
+			<arg value="${athrun_log_path}/*" />
+		</exec>
+	</target>
+
+	<target name="adb_getresult">
+
+		<echo message="Command: ${adb} -s ${device} pull /data/data/${apk_package}/files ./${result_path}" />
+
+		<exec executable="${adb}" failonerror="true">
+
+			<arg value="-s" />
+
+			<arg value="${device}" />
+
+			<arg value="pull" />
+
+			<arg value="/data/data/${apk_package}/files" />
+
+			<arg value="./${result_path}" />
+		</exec>
+
+		<echo message="Command: ${adb} -s ${device} shell rm /data/data/${apk_package}/files/*" />
+
+		<exec executable="${adb}" failonerror="true">
+
+			<arg value="-s" />
+
+			<arg value="${device}" />
+
+			<arg value="shell" />
+
+			<arg value="rm" />
+
+			<arg value="/data/data/${apk_package}/files/*" />
+		</exec>
+	</target>
+
+	<target name="junitreport">
+
+		<echo message="junitreport start" />
+
+		<junitreport todir="${result_path}">
+
+			<fileset dir="${result_path}">
+
+				<include name="*.xml" />
+			</fileset>
+
+			<report format="frames" todir="${result_path}" />
+		</junitreport>
+
+		<echo message="junitreport end" />
+	</target>
+
+	<target name="adb_getCapture">
+
+		<echo message="Command: ${adb} -s ${device} pull ${robotium_capture_path} ./${capture_path}" />
+
+		<exec executable="${adb}" failonerror="false">
+
+			<arg value="-s" />
+
+			<arg value="${device}" />
+
+			<arg value="pull" />
+
+			<arg value="${robotium_capture_path}" />
+
+			<arg value="./${capture_path}" />
+		</exec>
+
+		<echo message="Command: ${adb} -s ${device} shell rm ${robotium_capture_path}/*" />
+
+		<exec executable="${adb}" failonerror="false">
+
+			<arg value="-s" />
+
+			<arg value="${device}" />
+
+			<arg value="shell" />
+
+			<arg value="rm" />
+
+			<arg value="${robotium_capture_path}/*" />
+		</exec>
+	</target>
+
+	<target name="run" description="Run Test">
+
+		<sequential>
+
+			<antcall target="dirs" />
+
+			<antcall target="resign_apk" />
+
+			<antcall target="resign_apk_test" />
+
+			<antcall target="adb_setInstallLocation" />
+
+			<antcall target="adb_uninstall" />
+
+			<antcall target="adb_install" />
+
+			<antcall target="adb_uninstall_test" />
+
+			<antcall target="adb_install_test" />
+
+			<antcall target="adb_runtest" />
+
+			<antcall target="adb_getlog" />
+
+			<antcall target="adb_getresult" />
+
+			<antcall target="junitreport" />
+
+			<antcall target="adb_getCapture" />
+		</sequential>
+	</target>
+
+</project>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="5" total="5" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="105523" started-at="2016-03-13T10:55:41Z" finished-at="2016-03-13T10:57:27Z">
+    <groups>
+      <group name="RegisterActionTest">
+        <method signature="RegisterActionTest.testRegister()[pri:0, instance:com.kernel.testcase.RegisterActionTest@34b7bfc0]" name="testRegister" class="com.kernel.testcase.RegisterActionTest"/>
+        <method signature="RegisterActionTest.testRegisterUserLogin()[pri:0, instance:com.kernel.testcase.RegisterActionTest@34b7bfc0]" name="testRegisterUserLogin" class="com.kernel.testcase.RegisterActionTest"/>
+        <method signature="RegisterActionTest.testRegisterWithExitsUser()[pri:0, instance:com.kernel.testcase.RegisterActionTest@34b7bfc0]" name="testRegisterWithExitsUser" class="com.kernel.testcase.RegisterActionTest"/>
+      </group> <!-- RegisterActionTest -->
+      <group name="LoginActionTest">
+        <method signature="LoginActionTest.testLogin()[pri:0, instance:com.kernel.testcase.LoginActionTest@52af6cff]" name="testLogin" class="com.kernel.testcase.LoginActionTest"/>
+        <method signature="LoginActionTest.testLoginWithPwdError()[pri:0, instance:com.kernel.testcase.LoginActionTest@52af6cff]" name="testLoginWithPwdError" class="com.kernel.testcase.LoginActionTest"/>
+      </group> <!-- LoginActionTest -->
+    </groups>
+    <test name="Default test" duration-ms="105523" started-at="2016-03-13T10:55:41Z" finished-at="2016-03-13T10:57:27Z">
+      <class name="com.kernel.testcase.RegisterActionTest">
+        <test-method status="PASS" signature="beforeClassTest()[pri:0, instance:com.kernel.testcase.RegisterActionTest@34b7bfc0]" name="beforeClassTest" is-config="true" duration-ms="4" started-at="2016-03-13T18:56:03Z" finished-at="2016-03-13T18:56:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClassTest -->
+        <test-method status="FAIL" signature="testRegister()[pri:0, instance:com.kernel.testcase.RegisterActionTest@34b7bfc0]" name="testRegister" duration-ms="21047" started-at="2016-03-13T18:56:03Z" description="×¢²á²âÊÔ" finished-at="2016-03-13T18:56:24Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[com.kernel.testcase.RegisterActionTest.testRegister failed! expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: com.kernel.testcase.RegisterActionTest.testRegister failed! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:286)
+	at com.kernel.testcase.RegisterActionTest.testRegister(RegisterActionTest.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegister -->
+        <test-method status="FAIL" signature="testRegisterUserLogin()[pri:0, instance:com.kernel.testcase.RegisterActionTest@34b7bfc0]" name="testRegisterUserLogin" duration-ms="21038" started-at="2016-03-13T18:56:45Z" description="ÒÑ×¢²áÓÃ»§µÇÂ¼²âÊÔ" depends-on-methods="com.kernel.testcase.RegisterActionTest.testRegister" finished-at="2016-03-13T18:57:06Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[com.kernel.testcase.RegisterActionTest.testRegisterUserLogin failed! expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: com.kernel.testcase.RegisterActionTest.testRegisterUserLogin failed! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:286)
+	at com.kernel.testcase.RegisterActionTest.testRegisterUserLogin(RegisterActionTest.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterUserLogin -->
+        <test-method status="FAIL" signature="testRegisterWithExitsUser()[pri:0, instance:com.kernel.testcase.RegisterActionTest@34b7bfc0]" name="testRegisterWithExitsUser" duration-ms="21013" started-at="2016-03-13T18:57:06Z" description="ÒÑ×¢²áÓÃ»§ÖØ¸´×¢²á" depends-on-methods="com.kernel.testcase.RegisterActionTest.testRegisterUserLogin" finished-at="2016-03-13T18:57:27Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[com.kernel.testcase.RegisterActionTest.testRegisterWithExitsUser failed! expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: com.kernel.testcase.RegisterActionTest.testRegisterWithExitsUser failed! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:286)
+	at com.kernel.testcase.RegisterActionTest.testRegisterWithExitsUser(RegisterActionTest.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterWithExitsUser -->
+        <test-method status="PASS" signature="afterClassTest()[pri:0, instance:com.kernel.testcase.RegisterActionTest@34b7bfc0]" name="afterClassTest" is-config="true" duration-ms="1" started-at="2016-03-13T18:57:27Z" finished-at="2016-03-13T18:57:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClassTest -->
+      </class> <!-- com.kernel.testcase.RegisterActionTest -->
+      <class name="com.kernel.testcase.InitTest">
+        <test-method status="PASS" signature="beforeTestSuite()[pri:0, instance:com.kernel.testcase.InitTest@735b478]" name="beforeTestSuite" is-config="true" duration-ms="42944" started-at="2016-03-13T18:54:58Z" finished-at="2016-03-13T18:55:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestSuite -->
+        <test-method status="PASS" signature="afterTestSuite()[pri:0, instance:com.kernel.testcase.InitTest@735b478]" name="afterTestSuite" is-config="true" duration-ms="1" started-at="2016-03-13T18:57:27Z" finished-at="2016-03-13T18:57:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestSuite -->
+      </class> <!-- com.kernel.testcase.InitTest -->
+      <class name="com.kernel.testcase.LoginActionTest">
+        <test-method status="PASS" signature="beforeClassTest()[pri:0, instance:com.kernel.testcase.LoginActionTest@52af6cff]" name="beforeClassTest" is-config="true" duration-ms="3" started-at="2016-03-13T18:55:41Z" finished-at="2016-03-13T18:55:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClassTest -->
+        <test-method status="FAIL" signature="testLogin()[pri:0, instance:com.kernel.testcase.LoginActionTest@52af6cff]" name="testLogin" duration-ms="21200" started-at="2016-03-13T18:55:41Z" description="µÇÂ¼²âÊÔ" finished-at="2016-03-13T18:56:03Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[com.kernel.testcase.LoginActionTest.testLogin failed! expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: com.kernel.testcase.LoginActionTest.testLogin failed! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:286)
+	at com.kernel.testcase.LoginActionTest.testLogin(LoginActionTest.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="FAIL" signature="testLoginWithPwdError()[pri:0, instance:com.kernel.testcase.LoginActionTest@52af6cff]" name="testLoginWithPwdError" duration-ms="21182" started-at="2016-03-13T18:56:24Z" description="µÇÂ¼ÃÜÂë´íÎó²âÊÔ" depends-on-methods="com.kernel.testcase.LoginActionTest.testLogin" finished-at="2016-03-13T18:56:45Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[com.kernel.testcase.LoginActionTest.testLoginWithPwdError failed! expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: com.kernel.testcase.LoginActionTest.testLoginWithPwdError failed! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:286)
+	at com.kernel.testcase.LoginActionTest.testLoginWithPwdError(LoginActionTest.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithPwdError -->
+        <test-method status="PASS" signature="afterClassTest()[pri:0, instance:com.kernel.testcase.LoginActionTest@52af6cff]" name="afterClassTest" is-config="true" duration-ms="1" started-at="2016-03-13T18:56:45Z" finished-at="2016-03-13T18:56:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClassTest -->
+      </class> <!-- com.kernel.testcase.LoginActionTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
